@@ -12,9 +12,11 @@ html
     title Custom Designed Indian Wedding Invitation | Kards
   body
     include partials/_nav
+
     != yield
 
-    include partials/_footer
+    if !skipfooter
+      include partials/_footer
 
     script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
     script(type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
