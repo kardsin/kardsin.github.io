@@ -1,0 +1,36 @@
+.gallery
+
+  h2
+    margin-bottom: 30px
+
+  .invitation
+    margin-top: 75px
+
+  img
+    width: 90%
+
+    &.potrait
+      height: 450px
+      width: auto
+      padding-left: 10%
+
+  .caption
+    // Apply top padding to vertically center the text
+    font-size: 15px
+    padding-top: 25%
+    line-height: 25px
+
+    &:after
+      // Make element show up without content
+      content: ""
+      display: block
+      width: 100px
+      height: 50px
+      background: url("/img/kolam.svg") no-repeat
+
+      // Center to the bottom of caption
+      margin: 0 auto
+
+      // Keep this away from text
+      margin-top: 25px
+
