@@ -1,3 +1,16 @@
 .container
-  h1 Welcome to Harp.
-  h3 This is yours to own. Enjoy.
+  .jumbotron.hero
+    .row
+      .col-lg-10.col-sm-8
+        h1 Bored of templated wedding invitations?
+        h3 Create customized unique invitations
+
+        .row
+          form.col-lg-5.contact
+            label(for="email") Let's talk about your dream invitation !
+            input.form-control(id="email", placeholder="Enter your email address")
+            button.btn.btn-default(type='button') Submit
+
+      .col-lg-2.col-sm-4.hidden-xs
+        img.elephant(src="/img/elephant.png")
+
