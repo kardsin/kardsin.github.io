@@ -6,31 +6,36 @@
   .invitation
     margin-top: 75px
 
-  img
-    width: 90%
+    img
+      width: 90%
+      display: inline-block
 
-    &.potrait
-      height: 450px
-      width: auto
-      padding-left: 10%
+      &:hover
+        transition: all .2s ease-in-out
+        transform: scale(1.02)
 
-  .caption
-    // Apply top padding to vertically center the text
-    font-size: 15px
-    padding-top: 25%
-    line-height: 25px
+      &.potrait
+        height: 450px
+        width: auto
+        padding-left: 10%
 
-    &:after
-      // Make element show up without content
-      content: ""
-      display: block
-      width: 100px
-      height: 50px
-      background: url("/img/kolam.svg") no-repeat
+    .caption
+      // Apply top padding to vertically center the text
+      font-size: 15px
+      padding-top: 25%
+      line-height: 25px
 
-      // Center to the bottom of caption
-      margin: 0 auto
+      &:after
+        // Make element show up without content
+        content: ""
+        display: block
+        width: 100px
+        height: 50px
+        background: url("/img/kolam.svg") no-repeat
 
-      // Keep this away from text
-      margin-top: 25px
+        // Center to the bottom of caption
+        margin: 0 auto
+
+        // Keep this away from text
+        margin-top: 25px
 
