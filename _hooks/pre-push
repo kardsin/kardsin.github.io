@@ -1,0 +1,3 @@
+#!/bin/bash
+
+echo "Prepush hoook running"
