@@ -10,11 +10,16 @@
     .row.top-buffer
       .col-md-1
       .col-md-5
-        form.text-center(action="http://kards.us11.list-manage.com/subscribe/post?u=8bc29c3c12ddd669957cacf58&amp;id=1bcec3164e" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" target="_blank" novalidate)
+        iframe#formtarget(name="formtarget", onload="if(submitted){window.location='signup/thankyou'}")
+        form.text-center(action="https://docs.google.com/forms/d/1SInSr_psqGAGKcT7OyueH_qQqn31A0c-K2xeQb7PODY/formResponse" method="POST" id="ss-form" target="formtarget" onsubmit="submitted=true")
           div
-            label.title(for="mce-EMAIL") Leave me your contact
-          input.form-control(name="EMAIL" id="mce-EMAIL" placeholder="Enter your email address")
-          button(type='submit') Submit
+            label.title(class="ss-q-item-label" for="entry_1716382692") Let's talk about your dream wedding invitation !
+          input.form-control(type="email" name="entry.1716382692" value="" placeholder='Email Address' class="ss-q-short" id="entry_1716382692" dir="auto" aria-label="Let's talk about your dream wedding invitation  Must be a valid email address" aria-required="true" required=true title="Must be a valid email address")
+          input(type="hidden" name="draftResponse" value="[,,&quot;1376582943859711735&quot;]")
+          input(type="hidden" name="pageHistory" value="0")
+          input(type="hidden" name="fvv" value="0")
+          input(type="hidden" name="fbzx" value="1376582943859711735")
+          button.btn.btn-default(type="submit" name="submit" value="Submit" id="ss-submit" class="jfk-button jfk-button-action ") Submit
 
       .col-md-5
         h3.title.text-center Contact Me
