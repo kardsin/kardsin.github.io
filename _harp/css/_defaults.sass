@@ -1,8 +1,21 @@
+$lora-font: 'Lora', serif
+
+$kards-red: #e12e26
+$kards-brown: #453014
+
+@mixin captionstyle()
+  color: $kards-brown
+  font-size: 24px
+  font-weight: 700
+  font-style: italic
+
+
 body
-  font-family: "Helvetica"
+  font-family: $lora-font
 
 .top-buffer
   margin-top: 25px
   &.double
     margin-top: 50px
+
 

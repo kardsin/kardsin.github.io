@@ -4,7 +4,7 @@
   border-radius: 0px
 
   // Text color for all element
-  color: #453014
+  color: $kards-brown
 
   img.elephant
     // Sizing the image
@@ -15,11 +15,11 @@
     font-size: 32px
     font-weight: 900
 
-  h3
+  h2
     font-size: 19px
     font-style: italic
     font-weight: 700
-    margin-top: 10px
+    margin-top: 15px
 
   .contact
     margin-top: 30px
@@ -27,10 +27,12 @@
 
     label
       font-weight: 400
+      color: black
 
     input
       border-radius: 0
       border: 0
+      margin-top: 10px
 
     button
       // Give the button some space on top
@@ -41,16 +43,14 @@
       color: white
 
       // Nice round button
-      background-color: #453014
+      background-color: $kards-brown
       border-radius: 8px
       border: 0
 
 
 .showcase
 
-  h2
-    color: #453014
-    font-size: 24px
-    font-weight: 700
+  h3
+    +captionstyle()
     text-align: center
-    padding-bottom: 10px
+    padding-bottom: 5px
