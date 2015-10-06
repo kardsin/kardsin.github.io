@@ -6,7 +6,7 @@ mixin tree(head, tail)
           if /(\.html$)/.test(file)
             - prio = 1
             url
-              loc= tail + file
+              loc= "http://www.kards.in" + tail + file
               priority= prio
       else
         mixin tree(val, tail + key + "/")
