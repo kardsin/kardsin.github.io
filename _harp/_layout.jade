@@ -5,6 +5,13 @@ html
     meta(http-equiv="X-UA-Compatible" content="IE=edge")
     meta(name="viewport" content="width=device-width, initial-scale=1")
 
+    meta(property="og:url" content="http://www.kards.in")
+    meta(property="og:title" content="Creative Indian Wedding Invitations")
+    meta(property="og:description" content="Create an unique invitation for your wedding. No more boring and templated invitations")
+    meta(property="og:site_name" content="Kards")
+    meta(property="fb:app_id" content="429315390593255")
+
+
     link(rel="icon" type="image/png" href="favicon-32x32.png" sizes="32x32")
     link(rel="icon" type="image/png" href="favicon-16x16.png" sizes="16x16")
 
@@ -16,6 +23,22 @@ html
 
     title Custom Designed Indian Wedding Invitation | Kards
   body
+    script.
+      window.fbAsyncInit = function() {
+        FB.init({
+          appId      : '429315390593255',
+          xfbml      : true,
+          version    : 'v2.5'
+        });
+      };
+          (function(d, s, id){
+         var js, fjs = d.getElementsByTagName(s)[0];
+         if (d.getElementById(id)) {return;}
+         js = d.createElement(s); js.id = id;
+         js.src = "//connect.facebook.net/en_US/sdk.js";
+         fjs.parentNode.insertBefore(js, fjs);
+       }(document, 'script', 'facebook-jssdk'));
+
     include partials/_nav
 
     != yield
@@ -25,7 +48,7 @@ html
 
     //- Used by contact form submission scripts
     script.
-      submitted = false;
+      var submitted = false;
 
     script(type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js")
     script(type="text/javascript" src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js")
