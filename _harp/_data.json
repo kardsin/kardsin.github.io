@@ -4,5 +4,9 @@
     },
     "contact": {
         "skipfooter": true
+    },
+    "ujwala": {
+        "skipfooter": true,
+        "skipnav": true
     }
 }

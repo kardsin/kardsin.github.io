@@ -39,7 +39,8 @@ html
          fjs.parentNode.insertBefore(js, fjs);
        }(document, 'script', 'facebook-jssdk'));
 
-    include partials/_nav
+    if !skipnav
+      include partials/_nav
 
     != yield
 
