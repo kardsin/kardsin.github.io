@@ -1,0 +1,11 @@
+doctype(html)
+html
+  head
+    meta(charset="UTF-8")
+    meta(name="robots" content="noindex, nofollow")
+    meta(http-equiv="refresh" content="#{url}")
+    script.
+      window.location.href = "#{url}"
+  body
+    h2 If you are not redirected automatically,
+      a(href="#{url}")  click here

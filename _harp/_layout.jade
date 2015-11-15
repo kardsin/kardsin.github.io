@@ -21,7 +21,11 @@ html
     link(href='https://fonts.googleapis.com/css?family=Lora:400,400italic,700,700italic' rel='stylesheet' type='text/css')
     link(rel="stylesheet" href="/css/main.css")
 
-    title Custom Designed Indian Wedding Invitation | Kards
+    if pagetitle
+      title #{pagetitle}
+    else
+      title Custom Designed Indian Wedding Invitation | Kards
+
   body
     script.
       window.fbAsyncInit = function() {
