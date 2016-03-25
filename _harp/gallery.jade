@@ -2,14 +2,76 @@
   .container
     h2.text-center Brand new in the shop
 
-    .row.invitation#boardingpass
-      .col-md-1
-      .col-md-5
-        a(href="/img/invitation/boardingpass.png")
-          img(src="/img/invitation/boardingpass.png" alt="Boarding pass themed wedding invitation. This quirky wedding invitation is fun way of inviting people to join your wedding celebrations.")
-      .col-md-4
-        p.caption Boarding pass themed wedding invitation. The couple wanted a "Boarding pass" to invite all their friends in the US to join their wedding celebrations in India. This quirky wedding invitation is fun way of inviting people to join your wedding celebrations.
+    mixin image(url, caption, alt)
+      a(href=url data-lightbox="invitations")
+        img(src=url alt=alt)
+      p.caption= caption
 
+
+    .row.invitation
+      .col-md-4
+        +image("/img/invitation/new/boarding-pass-wedding-invitation.png", "Boarding pass invite", "Boarding pass themed wedding invitation. This quirky wedding invitation is fun way of inviting people to join your wedding celebrations.")
+      .col-md-4
+        +image("/img/invitation/new/boarding-pass-wedding-invitation-fancy-printed.png", "Boarding pass invite", "Boarding pass themed wedding invitation. This quirky wedding invitation is fun way of inviting people to join your wedding celebrations.")
+      .col-md-4
+        +image("/img/invitation/new/warli-wedding-invitation.png", "Warli wedding invite", "Warli themed wedding invitation")
+
+    .row.invitation
+      .col-md-4
+        +image("/img/invitation/new/cd-wedding-invitation.png", "CD style wedding invite", "CD wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/cooking-wedding-invitation.png", "Cook themed wedding invitation", "Cooking wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/kokopelli-engrave-wedding-invitation.png", "Kokopelli Engraved Wedding Invitation", "Kokopelli Engraved Wedding Invitation")
+
+    .row.invitation
+      .col-md-4
+        +image("/img/invitation/new/minion-wedding-invitation.png", "Minion wedding invitation", "Minion theme wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/king-queen-cardboard-weding-invite.png", "King Queen wedding invitation", "King Queen wedding invitation")
+        p.caption
+      .col-md-4
+        +image("/img/invitation/new/national-park-wedding-invitation.png", "National Park Wedding Invitation", "National park wedding Invitation")
+
+    .row.invitation
+      .col-md-4
+        +image("/img/invitation/new/beach-playful-wedding-invitation.png", "Beach playful wedding invitation", "Beach playful wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/chess-violin-wedding-invitation.png", "Chess Violin wedding invitation","Chess Violin wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/cute-save-the-date-invitation.png",  "Cute save the date invitation","Cute save the date invitation")
+
+    .row.invitation
+      .col-md-4
+        +image("/img/invitation/new/incredibles-cartoon-wedding-invitation.png", "Incredibles Cartoon wedding invitation", "Incredibles Cartoon wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/india-us-golden-gate-wedding-invitation.png" , "Golden Gate wedding invitation", "Golden Gate wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/iyer-iyengar-wedding-invitation.png", "Iyer Iyengar wedding invitation", "Iyer Iyengar wedding invitation")
+
+    .row.invitation
+      .col-md-4
+        +image("/img/invitation/new/loveatfirstsight-wedding-invitation.png" , "Love at first sight wedding invitation", "Love at first sight wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/offer-letter-wedding-invitation.png" , "Offer letter wedding invitation", "Offer letter wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/shopaholic-wedding-invitation.png", "Shopaholic wedding invitation", "Shopaholic wedding invitation")
+
+    .row.invitation
+      .col-md-4
+        +image("/img/invitation/new/tamil-rajini-wedding-invitation.png" , "Tamil Rajini wedding invitation", "Tamil Rajini wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/tamil-tr-sam-anderson-wedding-invitation.png" , "Tamil Cinema wedding invitation", "Tamil Cinema wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/tamil-60-birthday-invitation.png","Tamil 60th birthday invitation", "Tamil 60th birthday invitation")
+
+    .row.invitation
+      .col-md-4
+        +image("/img/invitation/new/peacock-wedding-invitation.png" , "Peacock wedding invitation", "Peacock wedding invitation")
+      .col-md-4
+        +image("/img/invitation/new/radhe-krishna-wedding-invitation.png" , "Radhe Krishna wedding invitation", "Radhe Krishna wedding invitation")
+
+  //-
     .row.invitation#tambram
       .col-md-1
       .col-md-5

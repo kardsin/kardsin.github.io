@@ -10,6 +10,7 @@
 
   .invitation
     margin-bottom: 75px
+    text-align: center
 
     @media #{$screen-sm}
       margin-bottom: 40px
@@ -18,41 +19,20 @@
       width: 90%
       display: inline-block
 
-      &:hover
-        transition: all .2s ease-in-out
-        transform: scale(1.02)
-
-      &.potrait
-        height: 450px
-        width: auto
-        padding-left: 10%
-
-        @media #{$screen-sm}
-          padding-left: 0
-          height: 350px
+      //&:hover
+      //  transition: all .2s ease-in-out
+      //  transform: scale(1.02)
+      //
+      //&.potrait
+      //  height: 450px
+      //  width: auto
+      //  padding-left: 10%
+      //
+      //  @media #{$screen-sm}
+      //    padding-left: 0
+      //    height: 350px
 
     .caption
       // Apply top padding to vertically center the text
-      font-size: 15px
-      padding-top: 25%
-      line-height: 25px
-
-      @media #{$screen-sm}
-        padding-top: 20px
-
-      &:after
-        // Make element show up without content
-        content: ""
-        display: block
-        width: 100px
-        height: 50px
-        background: url("/img/kolam.svg") no-repeat
-
-        // Center to the bottom of caption
-        margin: 0 auto
-
-        // Keep this away from text
-        margin-top: 25px
-
-        @media #{$screen-sm}
-          margin-top: 5px
+      font-size: 16px
+      padding-top: 10px
