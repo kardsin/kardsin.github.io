@@ -3,7 +3,7 @@
     h2.text-center Brand new in the shop
 
     mixin image(url, caption, alt)
-      a(href=url data-lightbox="invitations")
+      a(href=url data-lightbox="invitations" data-title=caption)
         img(src=url alt=alt)
       p.caption= caption
 
@@ -26,21 +26,20 @@
         +image("/img/invitation/new/kokopelli-engrave-wedding-invitation.png", "Kokopelli Engraved coaster invite", "Kokopelli Engraved Wedding Invitation")
 
     .row.invitation
-        .col-md-4
+      .col-md-4
         +image("/img/invitation/new/minion-wedding-invitation.png", "Bride & Groom as Minions", "Minion theme wedding invitation")
-        .col-md-4
+      .col-md-4
         +image("/img/invitation/new/incredibles-cartoon-wedding-invitation.png", "Super Hero invite", "Incredibles Cartoon wedding invitation")
-        col-md-4
+      .col-md-4
         +image("/img/invitation/new/iyer-iyengar-wedding-invitation.png", "Sundari neeyum..Sundaran naanum", "Iyer Iyengar wedding invitation")
 
       
     .row.invitation
       .col-md-4
         +image("/img/invitation/new/chess-violin-wedding-invitation.png", "Check Mate","Chess Violin wedding invitation")
-        .col-md-4
+      .col-md-4
         +image("/img/invitation/new/king-queen-cardboard-weding-invite.png", "Vinatage wedding invite", "King Queen wedding invitation")
-        p.caption
-        .col-md-4
+      .col-md-4
         +image("/img/invitation/new/shopaholic-wedding-invitation.png", "Shopaholic invite", "Shopaholic wedding invitation")
       
     .row.invitation
@@ -68,7 +67,6 @@
         +image("/img/invitation/new/tamil-60-birthday-invitation.png","60th birthday invitation", "Tamil 60th birthday invitation")
 
     .row.invitation
-    
       .col-md-4
         +image("/img/invitation/new/radhe-krishna-wedding-invitation.png" , "Radhe Krishna invite", "Radhe Krishna wedding invitation")
 
